@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="./TWO/build/two.js"></script>
+    <script type="text/javascript" src="animacoes.js"></script>
+    <title>MeuPortfólio</title>
+</head>
+
+<body>
+    <header id="heading" class="alturaHeader">
+        <div id="size" class="alturaHeader">
+            <h1 id="portfolio">PORTFÓLIO</h1>
+        </div>
+        <div id="posicao1" class="posicionamentoCanvas alturaHeader"></div>
+        <script>
+            var elemento = document.getElementById("posicao1");
+            params = {
+                autostart: true,
+                width: "auto",
+                height: "auto",
+                position:"relative"
+            }
+            var quadrado = [30];
+          
+            for (i = 0; i <=29; i++) {
+                var two = new Two(params).appendTo(elemento);
+                quadrado[i] = two.makeRectangle(35, 35, 50, 50);
+                quadrado[i].fill = random_rgba();
+            }
+            two.bind("update", rotate);
+           
+
+
+            two.update();
+        </script>
+    </header>
+
+
+
+
+</body>
+
+</html>
