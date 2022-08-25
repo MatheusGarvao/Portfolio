@@ -17,8 +17,13 @@ header {
     height: 100px;
 }
 
+.quadrado {
+    width: 50px;
+    height: 50px;
+    position: absolute;
+}
+
 #size {
-    width: 20%;
     align-items: center;
     justify-content: center;
     display: flex;
@@ -28,53 +33,14 @@ header {
     font-family: 'Courier New', Courier, monospace;
     -webkit-animation: pulsate 3s ease-out;
     -webkit-animation-iteration-count: infinite;
-
+    z-index: 1;
 }
 
-#posicao1 {
-    display:flex;
-  position: fixed;
+#posicao {
+    display: flex;
+    position: fixed;
     width: 100%;
     left: 0px;
-}
-
-#alinhar {
-    top: 30px;
-    left: 900px;
-}
-
-#alinhar2 {
-    left: 150px;
-    top: 10px;
-}
-
-.vermelho {
-    background: red;
-}
-
-.azul {
-    background: blue;
-}
-
-.posicaobloco {
-    position: relative;
-
-}
-
-.bloco1 {
-    width: 13px;
-    height: 13px;
-    background: red;
-}
-
-.bloco2 {
-    width: 11px;
-    height: 11px;
-}
-
-.bloco3 {
-    width: 16px;
-    height: 16px;
 }
 
 @-webkit-keyframes pulsate {
@@ -83,13 +49,9 @@ header {
     }
 
     50% {
-
         font-size: 260%;
     }
-
-
     100% {
-
         font-size: 250%;
     }
 }
