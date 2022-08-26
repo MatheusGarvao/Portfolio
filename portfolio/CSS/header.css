@@ -38,7 +38,7 @@ header {
 
 #posicao {
     display: flex;
-    position: fixed;
+    position: absolute;
     width: 100%;
     left: 0px;
 }
@@ -47,11 +47,14 @@ header {
     0% {
         font-size: 250%;
     }
-
     50% {
         font-size: 260%;
     }
     100% {
         font-size: 250%;
     }
+}
+
+.quadrado:hover{
+    background-color: aliceblue !important;
 }
