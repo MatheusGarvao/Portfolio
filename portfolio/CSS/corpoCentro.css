@@ -10,7 +10,7 @@
     height: 100%;
     border-radius: 50%;
     display: flex;
-    margin-left: 40%;
+    left: 40%;
     position: absolute;
 }
 
