@@ -39,7 +39,7 @@ setInterval(() => {
         if (quadrados.posicionamento[0][y] + 10 >= window.innerWidth-60 || quadrados.posicionamento[0][y]<0) {
             quadrados.velocidadesx[y] = -quadrados.velocidadesx[y];
         }
-        if (quadrados.posicionamento[1][y] >= 40 ||quadrados.posicionamento[1][y]<0) {
+        if (quadrados.posicionamento[1][y] >= 40.5 ||quadrados.posicionamento[1][y]<0) {
             quadrados.velocidadesy[y] = -quadrados.velocidadesy[y];
         }
 
