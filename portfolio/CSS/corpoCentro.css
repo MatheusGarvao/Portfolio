@@ -5,45 +5,63 @@
 
 #bola {
     background-color: rgb(243, 243, 243);
-    width: 20%;
+    width: 40%;
     height: 100%;
     border-radius: 50%;
     display: flex;
-    left: 40%;
+    left: 30%;
     position: absolute;
+    object-fit: contain;
     border: 2px solid rgb(219, 219, 219);
+    -webkit-animation:spin 360s linear infinite;
+    -moz-animation:spin 360s linear infinite;
+    animation:spin 5s linear infinite;
 }
 
-#bola:hover {
+#bola:hover, #bola:hover>div>a>img {
     animation: pulse 1s infinite;
 }
 
 #limite {
     display: flex;
     position: relative;
-    width: 100vw;
-    height: 20vw;
+    height: 40vw;
     top: 15vh;
 }
-#bola>div{
+
+#bola>div {
     height: 35%;
-    display: flex;
- position: relative;
+    position: relative;
+    object-fit: contain;
 }
 
-#bola>div>a>img{
+#bola>div>a>img {
     height: 100%;
     border-radius: 100%;
 }
 
-#bola>div:nth-child(1){
+#bola>div:nth-child(1) {
     margin-left: 33%;
-margin-top:10px;
+    margin-top: 10px;
 }
 
-#bola>div:nth-child(2){
-    margin-top:48%;
-   right:55%;
+#bola>div:nth-child(2) {
+    margin-top: 48%;
+    right: 55%;
+}
+
+#bola>div:nth-child(3){
+    margin-top: 45%;
+    right: 45%;
+
+}
+#bola>div:nth-child(3)>a>img {
+    border-radius: 0%;
+    height: 60%;
+    object-fit: contain;
+}
+#bola>div:nth-child(3)>a{
+
 }
 
 @-webkit-keyframes pulse {
@@ -76,3 +94,7 @@ margin-top:10px;
         box-shadow: 0 0 0 0 rgba(37, 37, 37, 0);
     }
 }
+
+@-moz-keyframes spin { 100% { -moz-transform: rotate(360deg); } }
+@-webkit-keyframes spin { 100% { -webkit-transform: rotate(360deg); } }
+@keyframes spin { 100% { -webkit-transform: rotate(360deg); transform:rotate(360deg); } }
