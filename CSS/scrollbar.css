@@ -1,0 +1,17 @@
+body {
+    overflow-x: hidden;
+}
+
+::-webkit-scrollbar {
+    width: 7px;
+}
+
+::-webkit-scrollbar-track {
+    background: #5f5f5f94;
+    border-radius: 100px;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: #ffffff94;
+    border-radius: 100px;
+}

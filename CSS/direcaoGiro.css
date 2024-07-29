@@ -1,0 +1,89 @@
+/* Rodar da equerda para a direita */
+
+@-webkit-keyframes rotatingD
+
+/* Safari e Chrome */
+    {
+    from {
+        -webkit-transform: rotate(0deg);
+        -o-transform: rotate(0deg);
+        transform: rotate(0deg);
+    }
+
+    to {
+        -webkit-transform: rotate(360deg);
+        -o-transform: rotate(360deg);
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes rotatingD {
+    from {
+        -ms-transform: rotate(0deg);
+        -moz-transform: rotate(0deg);
+        -webkit-transform: rotate(0deg);
+        -o-transform: rotate(0deg);
+        transform: rotate(0deg);
+    }
+
+    to {
+        -ms-transform: rotate(360deg);
+        -moz-transform: rotate(360deg);
+        -webkit-transform: rotate(360deg);
+        -o-transform: rotate(360deg);
+        transform: rotate(360deg);
+    }
+}
+
+/* Rodar da direita para a esquerda */
+
+@-webkit-keyframes rotatingE
+
+/* Safari and Chrome */
+    {
+    from {
+        -webkit-transform: rotate(360deg);
+        -o-transform: rotate(360deg);
+        transform: rotate(360deg);
+    }
+
+    to {
+        -webkit-transform: rotate(0deg);
+        -o-transform: rotate(0deg);
+        transform: rotate(0deg);
+    }
+}
+
+@keyframes rotatingE {
+    from {
+        -ms-transform: rotate(360deg);
+        -moz-transform: rotate(360deg);
+        -webkit-transform: rotate(360deg);
+        -o-transform: rotate(360deg);
+        transform: rotate(360deg);
+
+    }
+
+    to {
+        -ms-transform: rotate(0deg);
+        -moz-transform: rotate(0deg);
+        -webkit-transform: rotate(0deg);
+        -o-transform: rotate(0deg);
+        transform: rotate(0deg);
+    }
+}
+
+.rotatingD {
+    -webkit-animation: rotatingD 29s linear infinite;
+    -moz-animation: rotatingD 29s linear infinite;
+    -ms-animation: rotatingD 29s linear infinite;
+    -o-animation: rotatingD 29s linear infinite;
+    animation: rotatingD 29s linear infinite;
+}
+.rotatingE {
+    -webkit-animation: rotatingE 30s linear infinite;
+    -moz-animation: rotatingE 30s linear infinite;
+    -ms-animation: rotatingE 30s linear infinite;
+    -o-animation: rotatingE 30s linear infinite;
+    animation: rotatingE 30s linear infinite;
+}
